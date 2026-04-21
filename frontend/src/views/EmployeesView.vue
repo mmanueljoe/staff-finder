@@ -33,6 +33,10 @@ const skills = computed((): string[] => {
     <div>
       <RouterLink to="/upload">Upload Employee</RouterLink>
     </div>
+    <div>
+      <RouterLink to="/match">Find Employee Match</RouterLink>
+    </div>
+
     <EmployeeList
       :filteredEmployees="filteredEmployees"
       :loading="loading"
