@@ -30,6 +30,9 @@ const skills = computed((): string[] => {
 <template>
   <div class="container">
     <SkillFilter :skills="skills" @filter="store.setActiveFilter" />
+    <div>
+      <RouterLink to="/upload">Upload Employee</RouterLink>
+    </div>
     <EmployeeList
       :filteredEmployees="filteredEmployees"
       :loading="loading"
